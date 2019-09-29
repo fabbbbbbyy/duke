@@ -10,7 +10,8 @@ import javafx.stage.Stage;
  */
 public class Main extends Application {
 
-    private static final String filePath = "data/duke.txt";
+    private static final String PATH = "\\damith.txt";
+    private static final String filePath = System.getProperty("user.dir") + PATH;
 
     private Duke duke = new Duke(filePath);
 
